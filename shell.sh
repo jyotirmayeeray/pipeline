@@ -4,9 +4,8 @@ echo "enter size of  numbers "
 read num
 
 sum=0
-for((i=1;i<=num;i++))
+for(( i=1;i<=25;i++ ))
 do
-	read num
-	sum=$((sum+num))
+	sum=$(($sum+$i))
 done
 echo "sum of  $num "
