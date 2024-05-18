@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "enter a number "
+echo "enter size of  numbers "
 read num
 
 sum=0
-for((i=0;i<=25;i++))
+for((i=1;i<=num;i++))
 do
-	sum=$((sum+i))
+	read num
+	sum=$((sum+num))
 done
 echo "sum of  $num "
