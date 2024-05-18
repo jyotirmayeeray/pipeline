@@ -7,9 +7,9 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/jyotirmayeeray/pipeline.git'
             }
         }
-        stagsh'bash shell.sh'
+        stage('shell') {
             steps{
-                sh 'bash file.sh'
+                sh 'bash shell.sh'
             }
         }
     }
